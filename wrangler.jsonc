@@ -7,7 +7,7 @@
   },
   "routes": [
     {
-      "pattern": "vvultimatum.sbs",
+      "pattern": "activematter.blog/*",
       "custom_domain": true
     }
   ]
