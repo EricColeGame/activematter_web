@@ -6,7 +6,14 @@
     "description": "Complete Active Matter Wiki with weapon guides, gameplay tips, missions, updates, and detailed information to help players master this futuristic sci-fi shooter.",
     "legalNotice": "Non-official fan wiki. Made by players, for players."
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "weapons": "Weapons",
+    "classes": "Classes",
+    "mechanics": "Mechanics",
+    "system": "System",
+    "release": "Release"
+  },
   "home": {
     "meta": {
       "title": "Active Matter Wiki - Weapons, Guides & Updates",
@@ -446,5 +453,29 @@
     "buildGuide": "Weapon Builds",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
+  },
+  "guide": {
+    "overviewTitle": "Active Matter Beginner & Strategy Guides",
+    "overviewDescription": "Comprehensive walkthroughs, starter tutorials, survival tactics, and extraction tips for Active Matter operatives entering the quantum anomaly."
+  },
+  "weapons": {
+    "overviewTitle": "Active Matter Weapons & Loadout Armory",
+    "overviewDescription": "In-depth breakdown of firearms, weapon tier lists, attachment configurations, and gun customization in Active Matter."
+  },
+  "classes": {
+    "overviewTitle": "Active Matter Operative Classes & Syndicates",
+    "overviewDescription": "Explore syndicate factions, operative combat roles, unique tactical abilities, and character synergies in Active Matter."
+  },
+  "mechanics": {
+    "overviewTitle": "Active Matter Core Game Mechanics & Anomalies",
+    "overviewDescription": "Master quantum mechanics, gravity shifts, anomaly safe zones, time loops, and reality-bending environmental physics in Active Matter."
+  },
+  "system": {
+    "overviewTitle": "Active Matter System Requirements & PC Settings",
+    "overviewDescription": "Official minimum and recommended PC system specs, Unreal Engine 5 performance optimizations, and Steam download guides for Active Matter."
+  },
+  "release": {
+    "overviewTitle": "Active Matter Release Dates & Playtest Schedule",
+    "overviewDescription": "Track Active Matter release dates, closed beta access, playtest registration schedules, and early access launch timelines."
   }
 }

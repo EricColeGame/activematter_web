@@ -1,0 +1,164 @@
+export const metadata = {
+  title: "Configuración de rendimiento de Active Matter: la mejor guía de PC para altos FPS y cero tirones",
+  description: "Maximiza tus FPS y elimina el retraso de entrada con la mejor configuración de rendimiento de Active Matter. Guía completa de optimización de PC para un combate fluido.",
+  category: "system",
+  date: "2026-09-11",
+};
+
+En un shooter táctico de alto riesgo donde las fracciones de segundo deciden cada tiroteo, contar con una **configuración de rendimiento de Active Matter** bien ajustada puede marcar la diferencia entre extraer con botín de élite o morir por una caída repentina de fotogramas. Dado que el juego cuenta con densas zonas de anomalías, efectos volumétricos atmosféricos y un combate PvPvE de ritmo rápido, el hardware no optimizado sufrirá rápidamente microtirones (*micro-stutters*) y graves picos de latencia. Al aplicar nuestros **ajustes de rendimiento probados para Active Matter**, podrás estabilizar tus tiempos de fotograma (*frametimes*), maximizar la claridad visual a través del denso polvo anómalo y alcanzar altas tasas de refresco en equipos de juego modernos.
+
+Ya sea que juegues en un equipo de gama media que busca 144 FPS estables o que gestiones una configuración más antigua y económica, ajustar tu configuración garantiza que tu sistema asigne la potencia de procesamiento donde más importa: la visibilidad de los objetivos y la precisión de respuesta.
+
+---
+
+## Requisitos del sistema de Active Matter y comprobación básica de hardware
+
+Antes de sumergirte en archivos de configuración avanzados y menús del juego, asegúrate de que tu PC cumple con los requisitos mínimos de hardware para el título. Al ser un intenso shooter en DirectX 12, el juego depende en gran medida de subprocesos rápidos en procesadores multinúcleo y de los modernos canales de sombreado (*shader pipelines*) de la GPU.
+
+Los informes de la comunidad y la experiencia de los jugadores demuestran que ejecutar el juego en un disco duro mecánico estándar (HDD) provoca tirones al cruzar los límites de los sectores. Instala siempre el juego en una unidad de estado sólido (SSD) para evitar cuellos de botella en la carga de recursos en tiempo real. Consulta las especificaciones oficiales del juego en el [Active Matter Steam Store Hub](https://store.steampowered.com/) para confirmar la compatibilidad de tu hardware.
+
+| Componente de hardware | Requisitos mínimos de PC | Requisitos recomendados de PC |
+| :--- | :--- | :--- |
+| **Sistema operativo** | Windows 10 (64 bits) | Windows 11 (64 bits) |
+| **Procesador (CPU)** | Intel Core i5-8600 / AMD Ryzen 5 2600 | Intel Core i7-10700 / AMD Ryzen 7 5800X |
+| **Tarjeta gráfica (GPU)** | NVIDIA GeForce GTX 1060 (6GB) / AMD Radeon RX 580 | NVIDIA GeForce RTX 3070 / AMD Radeon RX 6800 |
+| **Memoria del sistema (RAM)** | 16 GB Dual-Channel | 32 GB Dual-Channel (3200MHz+) |
+| **Versión de DirectX** | Versión 12 | Versión 12 |
+| **Requisitos de almacenamiento** | 70 GB de espacio disponible (se requiere SSD) | 70 GB SSD NVMe M.2 |
+| **Conexión de red** | Conexión a Internet de banda ancha | Conexión de banda ancha de baja latencia |
+
+Si tu sistema se encuentra cerca de los requisitos mínimos, el uso de tecnologías de reescalado como NVIDIA DLSS o AMD FSR es innegociable para mantener unos 60 FPS estables en tiroteos intensos.
+
+---
+
+## La mejor configuración de rendimiento de Active Matter para gráficos principales
+
+Tu configuración gráfica principal controla cómo el motor de renderizado equilibra la complejidad geométrica, el mapeado de sombras y la resolución de texturas. En los shooters tácticos, lo ideal es contar con una alta fidelidad de texturas para detectar siluetas distantes, pero una baja carga de sombras para evitar sobrecargar innecesariamente la GPU.
+
+Reducir la iluminación volumétrica, el postprocesamiento y las sombras dinámicas puede generar un aumento de entre el 25 % y el 35 % en la tasa media de fotogramas. Aplicar una **configuración de rendimiento optimizada para Active Matter** te permite eliminar la sobrecarga visual distractora manteniendo perfiles de enemigos nítidos.
+
+| Ajuste gráfico principal | Enfoque competitivo / Rendimiento | Enfoque en calidad / Inmersión | Impacto en el rendimiento |
+| :--- | :--- | :--- | :--- |
+| **Resolución de pantalla** | 1080p o 1440p (Nativa) | 1440p o 4K (Nativa) | Alto |
+| **Reescalado (DLSS / FSR)** | Calidad (o Equilibrado para 4K) | Calidad o DLAA | Alto (aumento de FPS) |
+| **Calidad de texturas** | Alta (si VRAM >= 8 GB) | Ultra (12 GB+ VRAM) | Bajo (depende de la VRAM) |
+| **Calidad de sombras** | Media o Baja | Alta | Muy alto |
+| **Antialiasing** | TAA Alto + Enfoque | DLAA / TAA Alto | Medio |
+| **Postprocesamiento** | Bajo | Alto | Alto |
+| **Desenfoque de movimiento** | Completamente desactivado (Off) | Desactivado | Bajo (pérdida de claridad) |
+
+### Estrategia de reescalado y antialiasing
+
+Para los usuarios de NVIDIA RTX, configurar DLSS en modo **Calidad** a 1440p o **Equilibrado** a 4K reconstruye los detalles subpíxel con gran limpieza mientras proporciona un aumento masivo de 20 a 40 FPS. Los usuarios de AMD Radeon e Intel Arc deberían recurrir a FSR en modo **Calidad** combinado con una pasada moderada de nitidez.
+
+Evita configurar DLSS o FSR en «Rendimiento ultra» a menos que juegues con hardware extremadamente limitado, ya que la resolución base interna más baja produce parpadeos y artefactos visuales en vallas metálicas, vegetación y anomalías lejanas.
+
+---
+
+## Ajustes de pantalla y tasa de refresco para una latencia mínima
+
+Los ajustes de pantalla controlan la presentación de los fotogramas y la sincronización entre tu GPU y tu monitor. Una sincronización de fotogramas deficiente (*frame pacing*) a menudo se siente como una tasa baja de FPS, incluso si el contador muestra números altos.
+
+Para asegurarte de que tu **configuración de rendimiento de pantalla en Active Matter** ofrezca una respuesta instantánea desde el clic hasta el monitor, desactiva el V-Sync interno y utiliza la sincronización a nivel de hardware mediante NVIDIA G-Sync o AMD FreeSync.
+
+| Opción de pantalla | Valor competitivo | Valor casual / cinemático | Beneficio técnico |
+| :--- | :--- | :--- | :--- |
+| **Modo de pantalla** | Pantalla completa exclusiva | Ventana sin bordes | Elimina la sobrecarga del DWM de Windows |
+| **Sincronización vertical (V-Sync)** | Desactivado | Activado (si hay desgarro de pantalla) | Reduce drásticamente el retardo de entrada del ratón |
+| **NVIDIA Reflex Low Latency** | Activado + Boost | Activado | Vacía la cola de renderizado; reduce la latencia del sistema |
+| **Limitador de fotogramas** | 3–4 FPS por debajo de los Hz del monitor | Frecuencia de actualización del monitor (o Sin límite) | Evita el desbordamiento del búfer de G-Sync/FreeSync |
+| **Campo de visión (FOV)** | 90–100 | 80–90 | Maximiza la detección periférica de objetivos |
+| **Resolución dinámica** | Desactivado (Off) | Opcional | Evita cambios bruscos de resolución en medio del combate |
+
+Ajustar el limitador de fotogramas del juego ligeramente por debajo de la tasa de refresco (como 141 FPS en un panel de 144 Hz, o 237 FPS en un monitor de 240 Hz) mantiene la pantalla dentro del rango de tasa de refresco variable. Esto evita cuellos de botella en la cola de la GPU y elimina el desgarro de imagen (*screen tearing*) sin introducir el notable retraso de entrada asociado al V-Sync tradicional.
+
+---
+
+## Configuración avanzada de postprocesamiento y cámara
+
+Ciertos efectos cinematográficos están diseñados para imitar las cámaras de cine en lugar de la visión humana. En las incursiones de extracción competitivas, efectos como la profundidad de campo, el grano de película y la aberración cromática dificultan activamente la visibilidad de los oponentes escondidos en pasillos oscuros o tras la vegetación.
+
+Ajustar con precisión tu **configuración de rendimiento de Active Matter** en los submenús visuales avanzados limpiará drásticamente tu campo de visión.
+
+| Ajuste visual avanzado | Valor recomendado | Impacto en la claridad visual y adquisición de objetivos |
+| :--- | :--- | :--- |
+| **Profundidad de campo (DoF)** | Desactivado | Mantiene nítidos los elementos lejanos del fondo al apuntar con la mira (ADS) |
+| **Grano de película** | Desactivado | Elimina el ruido simulado, mejorando la nitidez de las texturas |
+| **Aberración cromática** | Desactivado | Elimina los halos de color en los bordes de la pantalla y las retículas |
+| **Oclusión ambiental** | Bajo | Mantiene visibles las esquinas oscuras sin sacrificar la profundidad |
+| **Enfoque de imagen** | 35% – 50% | Resalta los modelos de los jugadores frente a fondos con anomalías |
+| **Movimiento de cámara** | Desactivado / Mínimo | Mantiene la retícula centrada durante explosiones y transiciones al esprintar |
+| **Zoom de mira realista al apuntar** | Desactivado | Proporciona una transición más rápida entre objetivos y una visión periférica más amplia |
+
+Desactivar el movimiento de la cámara y la profundidad de campo de la mira asegura que, cuando se produzcan ataques de artillería o detonaciones de pulsos anómalos cerca de ti, tu visión se mantenga lo suficientemente estable como para responder al fuego con precisión.
+
+---
+
+## Calibración del rendimiento de entrada, jugabilidad y audio
+
+El rendimiento va más allá de los fotogramas por segundo; el posicionamiento del audio y el procesamiento de entrada directa (*raw input*) determinan la rapidez con la que puedes reaccionar ante la información táctica. Si los movimientos del ratón sufren suavizado o el audio espacial queda amortiguado por un balance ambiental innecesario, reaccionarás más lento que tus rivales.
+
+Integrar parámetros de ratón altamente responsivos junto con tu **configuración principal de rendimiento de Active Matter** afianzará tu memoria muscular.
+
+| Parámetro de entrada y sonido | Ajuste competitivo optimizado | Ventaja táctica |
+| :--- | :--- | :--- |
+| **Rango de DPI del ratón** | 800 – 1200 DPI | Seguimiento suave y predecible en microajustes |
+| **Multiplicador de sensibilidad al apuntar (ADS)** | 0.85 – 0.95 | Colocación precisa de la retícula a media y larga distancia |
+| **Entrada directa del ratón (Raw Input)** | Activado | Omite las mejoras de puntero del SO para una precisión 1:1 |
+| **Aceleración del ratón** | Desactivado (Off) | Garantiza una relación constante entre el movimiento físico y digital |
+| **Tasa de sondeo (Polling Rate)** | 1000 Hz (o superior) | Minimiza los retrasos de respuesta del hardware a menos de 1 ms |
+| **Perfil de mezcla de audio** | Auriculares / Noche dinámica | Amplifica las frecuencias de pasos y recargas de armas |
+| **Volumen de la música** | 0% – 15% | Evita que las pistas musicales de extracción enmascaren los pasos enemigos |
+
+Configura el balance de sonido maestro priorizando los efectos de sonido al máximo. Los disparos, las señales auditivas de pasos y las alertas de anomalías deben sobresalir con claridad en la mezcla para que puedas localizar amenazas a través de paredes y desniveles del terreno.
+
+---
+
+## Optimización de Windows y ajustes a nivel de sistema
+
+Para asegurarte de que tu hardware aproveche al máximo tu **configuración de rendimiento de Active Matter**, los jugadores experimentados recomiendan varios ajustes en segundo plano en Windows. Los servicios en segundo plano, los planes de energía y las superposiciones (*overlays*) pueden provocar caídas de fotogramas durante el renderizado intensivo de partículas.
+
+```
+[Lista de comprobación de ajustes del sistema]
+├── 1. Activar el Modo de juego de Windows (Configuración > Juegos > Modo de juego)
+├── 2. Activar la programación de GPU acelerada por hardware (HAGS)
+├── 3. Establecer la prioridad del proceso de Active Matter en "Alta" en el Administrador de tareas
+├── 4. Configurar el plan de energía en "Máximo rendimiento" o "Alto rendimiento"
+└── 5. Desactivar las superposiciones en el juego de Discord, Steam y GeForce Experience
+```
+
+### Buenas prácticas esenciales sobre controladores y temperaturas
+
+1. **Realiza instalaciones limpias de controladores de GPU**: al actualizar controladores para parches recién lanzados del juego, utiliza Display Driver Uninstaller (DDU) en el modo seguro de Windows para limpiar cachés de sombreadores dañadas.
+2. **Monitoriza las temperaturas del hardware**: el estrangulamiento térmico (*thermal throttling*) en CPUs y GPUs modernas provoca caídas agresivas en las frecuencias de reloj. Asegúrate de que tu GPU funcione por debajo de los 80 °C y las temperaturas del encapsulado de la CPU se mantengan por debajo de los 85 °C durante sesiones de juego prolongadas.
+3. **Cierra aplicaciones innecesarias en segundo plano**: los navegadores web con aceleración por hardware activada, los programas de streaming y las herramientas de grabación activas consumen valiosa VRAM y ciclos de CPU.
+
+---
+
+## Resumen de ajustes competitivos para una acción rápida
+
+Al prepararte para partidas clasificatorias o incursiones en sectores de alto nivel, debes priorizar la claridad visual y los FPS elevados por encima de todo. Adoptar una **configuración de rendimiento competitiva para Active Matter** garantiza que los efectos visuales no te distraigan de la identificación de objetivos.
+
+Utiliza este resumen de referencia rápida para configurar tu equipo antes de desplegarte en tu próxima partida:
+
+* **Resolución**: resolución nativa del monitor combinada con DLSS/FSR en modo Calidad.
+* **Sombras e iluminación**: establece las sombras en Bajo/Medio y la oclusión ambiental en Bajo.
+* **Ajustes cinemáticos**: desactiva por completo el desenfoque de movimiento, el grano de película y la aberración cromática.
+* **Reducción de latencia**: activa NVIDIA Reflex en Activado + Boost, con V-Sync desactivado dentro del juego.
+* **Configuración del FOV**: mantén tu campo de visión entre 90 y 100 grados para una percepción situacional óptima.
+
+---
+
+## Preguntas frecuentes sobre la configuración de rendimiento de Active Matter
+
+### ¿Cuáles son los mejores ajustes de rendimiento de Active Matter para PC de gama baja o económicos?
+Para configuraciones de juego económicas (como sistemas con una GTX 1660 Super o RX 580), establece tu resolución base en 1080p y activa FSR o DLSS en modo Rendimiento. Reduce las sombras, el postprocesamiento y la oclusión ambiental a Bajo, y mantén las texturas en Medio para evitar saturar la VRAM. Desactiva todos los filtros cinemáticos como el desenfoque de movimiento y la profundidad de campo para mantener una tasa de fotogramas estable.
+
+### ¿Cómo soluciono los microtirones y las caídas repentinas de FPS en Active Matter?
+Los microtirones suelen estar causados por la compilación de sombreadores o cuellos de botella en la carga de recursos (*asset streaming*). Asegúrate de que el juego esté instalado en un SSD NVMe en lugar de un HDD, activa el Modo de juego de Windows y limita tu tasa máxima de fotogramas entre 3 y 4 FPS por debajo de la frecuencia de actualización de tu pantalla. Además, confirma que NVIDIA Reflex esté activado para evitar que la cola de renderizado de la CPU se desborde.
+
+### ¿Qué campo de visión (FOV) ofrece el mejor equilibrio entre visibilidad y FPS?
+Un campo de visión entre 90 y 100 grados ofrece el mejor equilibrio competitivo. Aunque los valores de FOV más altos permiten detectar a los jugadores que flanquean con mayor facilidad, los valores superiores a 105 aumentan la cantidad de objetos en pantalla que la GPU debe renderizar, lo que puede perjudicar el rendimiento en tarjetas gráficas de gama de entrada.
+
+### ¿Desactivar o bajar el postprocesamiento mejora la visibilidad en las zonas de anomalías?
+Sí. Reducir el postprocesamiento simplifica la niebla volumétrica, el resplandor atmosférico intenso (*bloom*) y la distorsión de lente dentro de las zonas de anomalías peligrosas. Al aplicar una **configuración de rendimiento adaptada para Active Matter** que reduzca estos efectos, las siluetas enemigas se vuelven mucho más distinguibles frente a descargas de energía brillantes y entornos polvorientos.
