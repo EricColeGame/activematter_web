@@ -34,27 +34,27 @@
     },
     "start": {
       "eyebrow": "Start Here",
-      "title": "Your My Seafood Stand Journey",
+      "title": "Your activematter.blog Journey",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Master quantum anomaly zones from day one with essential navigation tips, controls, and raid survival basics on activematter.blog."
         },
         {
           "number": "2",
           "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "description": "Accelerate mercenary progression and unlock advanced operative perks with high-efficiency raid mission farming routes."
         },
         {
           "number": "3",
           "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "description": "Locate high-density active matter nodes, military prototype stashes, and rare crafting materials across unstable sectors."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in My Seafood Stand."
+          "title": "Weapons & Loadouts",
+          "description": "Optimize your tactical loadouts with top firearm modifications, ballistics choices, and armor ratings for high-stakes combat."
         }
       ]
     },
@@ -62,237 +62,316 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Weapons List",
+        "Anomaly Zones",
+        "System Requirements"
       ],
       "cards": [
         {
           "badge": "Beginner",
-          "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "title": "Beginner Starter Guide",
+          "description": "Essential gameplay mechanics, raid survival strategies, and extraction basics for new operatives.",
+          "href": "/guide/active-matter-beginner-guide"
         },
         {
-          "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "badge": "Weapons",
+          "title": "Complete Firearms Arsenal",
+          "description": "Comprehensive stats, modifications, and handling comparisons across all weapon categories.",
+          "href": "/weapons/active-matter-weapons-list"
         },
         {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "badge": "Mechanics",
+          "title": "Quantum Anomaly Zones",
+          "description": "Survive shifting physical laws, gravity anomalies, and deadly spacetime distortions.",
+          "href": "/mechanics/active-matter-anomaly-zones"
         },
         {
-          "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
+          "badge": "Combat",
+          "title": "Best Weapons Tier List",
+          "description": "Top-performing assault rifles, precision snipers, and high-impact firearms ranked for raids.",
+          "href": "/weapons/active-matter-best-weapons"
         },
         {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "badge": "Classes",
+          "title": "Operators & Syndicates",
+          "description": "Explore playable mercenary operatives, faction backgrounds, and tactical abilities.",
+          "href": "/classes/active-matter-operators"
         },
         {
-          "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
-        },
-        {
-          "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
-        },
-        {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "System",
+          "title": "PC System Requirements",
+          "description": "Official minimum and recommended hardware specs for optimal Unreal Engine 5 performance.",
+          "href": "/system/active-matter-system-requirements"
         }
       ]
     },
     "aboutGame": {
-      "title": "What is My Seafood Stand?",
+      "title": "What is Active Matter?",
       "paragraphs": [
-        "My Seafood Stand is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Active Matter is a realistic tactical extraction shooter set in a multiverse fractured by quantum instability. Operating as a contracted mercenary, you infiltrate hazardous anomaly zones governed by shifting physical laws, gravity anomalies, and hostile syndicate operatives to harvest precious quantum materials.",
+        "Survive ruthless PvPvE skirmishes, master lethal ballistic weaponry, scavenge high-tier technology, and secure your extraction before spacetime ruptures consume the sector. Our wiki provides up-to-date weapon stats, zone maps, equipment blueprints, and tactical raid walkthroughs."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
+          "value": "Matter Team"
+        },
+        {
+          "label": "Publisher",
+          "value": "Gaijin Network"
         },
         {
           "label": "Platform",
-          "value": "Roblox"
+          "value": "PC (Steam)"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Extraction Shooter"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Engine",
+          "value": "Unreal Engine 5"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
-        },
-        {
-          "label": "Total Skills",
-          "value": "130+"
-        },
-        {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Combat Style",
+          "value": "Tactical PvPvE"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
-      "title": "Explore Active Matter Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "title": "Explore activematter.blog Guides & Database",
+      "description": "Master Active Matter with tactical raid guides, complete firearm breakdowns, quantum anomaly maps, gear loadouts, and survival strategies.",
       "modules": [
         {
           "order": 1,
-          "name": "My Seafood Stand Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/my-seafood-stand-codes",
-          "displayType": "code-box",
+          "name": "activematter.blog Beginner Guide",
+          "description": "This module introduces new players to the core gameplay loop, including extraction raids, PvPvE combat, loot collection, survival strategies, and basic progression. It helps beginners understand how to enter quantum unstable zones and improve their early game experience.",
+          "href": "/guide/active-matter-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Prepare basic loadout and medical supplies before deploying into the quantum zone"
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Infiltrate anomaly zones and avoid hazardous environmental spacetime anomalies"
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Scavenge valuable active matter particles, military crates, and weapons"
+            },
+            {
+              "label": "4",
+              "detail": "Locate designated extraction points and hold out against rival operatives to escape"
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/my-seafood-stand-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "activematter.blog Weapons Guide",
+          "description": "A detailed overview of available weapons, firearms categories, modifications, and combat recommendations. Players can compare different weapon types and learn how to build effective loadouts for raids.",
+          "href": "/weapons/active-matter-weapons-list",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Rifles",
+              "detail": "Versatile assault rifles tailored for medium-to-long range quantum firefights"
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "SMGs",
+              "detail": "High fire-rate compact submachine guns dominating close-quarters skirmishes"
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Snipers",
+              "detail": "Precision marksman rifles delivering lethal single-shot armor penetration"
+            },
+            {
+              "label": "Shotguns",
+              "detail": "Devastating point-blank firepower for securing tight building corridors"
+            },
+            {
+              "label": "Sidearms",
+              "detail": "Reliable backup pistols with swift draw speeds in high-stress emergencies"
+            },
+            {
+              "label": "Mods",
+              "detail": "Tactical optics, suppressors, and extended magazines customized for raids"
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/my-seafood-stand-tier-list",
-          "displayType": "tier-grid",
+          "name": "activematter.blog Maps Guide",
+          "description": "This module covers raid locations, map features, exploration points, and important survival information. It helps players learn different environments and prepare for extraction missions.",
+          "href": "/mechanics/active-matter-anomaly-zones",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "Outpost",
+              "detail": "Abandoned military research facility with dense industrial loot and hot extraction points"
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "Anomalies",
+              "detail": "Gravity warp fields and spacetime tears containing high-density active matter cores"
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "Bunkers",
+              "detail": "Subterranean containment vaults housing rare technological prototypes and syndicate guards"
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "Extracts",
+              "detail": "Rotating quantum beacon pads requiring signal activation and tactical defense"
+            },
+            {
+              "label": "Perimeter",
+              "detail": "Hazardous border checkpoints with sniper overwatch positions and vehicle wreckage"
+            },
+            {
+              "label": "Ruins",
+              "detail": "Collapsed urban blocks offering vertical flanking routes and concealed ambush spots"
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/my-seafood-stand-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "activematter.blog Gear Guide",
+          "description": "A guide to equipment, armor, backpacks, medical items, and tactical supplies available in Active Matter. Players can learn which gear choices improve survival chances during dangerous raids.",
+          "href": "/guide/active-matter-loot-guide",
+          "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "S",
+              "detail": "Heavy Composite Armor · Tactical Rucksack — Maximum survivability and inventory capacity"
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "A",
+              "detail": "Reinforced Ballistic Vest · Advanced Medkit — Reliable protection and swift health recovery"
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "B",
+              "detail": "Standard Combat Rig · Field Bandages — Solid mid-tier gear for cost-effective raiding"
+            },
+            {
+              "label": "C",
+              "detail": "Scavenger Webbing · Basic Splints — Lightweight starter equipment with minimal defense"
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/my-seafood-stand-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "activematter.blog Loadout Guide",
+          "description": "This section explains how to create effective raid setups by combining weapons, equipment, ammunition, and tactical items. It targets players searching for optimized builds before entering battles.",
+          "href": "/weapons/active-matter-best-weapons",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "Assault",
+              "detail": "Balanced automatic rifle setup equipped for frontline pushes and squad combat"
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "Recon",
+              "detail": "Silenced precision build focused on surveillance, info gathering, and distance kills"
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Infiltrator",
+              "detail": "High-mobility CQB loadout designed for quick loot runs and aggressive flanks"
+            },
+            {
+              "label": "Support",
+              "detail": "Heavy sustained fire with surplus medical supplies and defensive armor plating"
+            },
+            {
+              "label": "Budget",
+              "detail": "Cost-efficient starter gear for low-risk resource farming and zone reconnaissance"
+            },
+            {
+              "label": "Tactical",
+              "detail": "EMP grenades, thermal optics, and utility devices for coordinated strike teams"
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/my-seafood-stand-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "activematter.blog Editions Guide",
+          "description": "This module compares different game editions and their included bonuses, weapons, resources, and exclusive items. It helps users understand which purchase option fits their needs.",
+          "href": "/release/active-matter-early-access",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Standard",
+              "detail": "Full base game access, standard inventory stash, and recruit equipment bundle"
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Deluxe",
+              "detail": "Expanded container stash size, bonus starter credits, and unique operator skins"
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Quantum",
+              "detail": "Maximum stash capacity, premium weapon cosmetics, and season pass bonus access"
+            },
+            {
+              "label": "PreOrder",
+              "detail": "Guaranteed closed beta access, unique combat emblem, and early raid booster packs"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "activematter.blog Updates",
+          "description": "A news and patch update section covering official announcements, balance changes, new content, and developer information. It helps returning players track the latest game changes.",
+          "href": "/release/active-matter-closed-beta",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Patch 0.4.1",
+              "detail": "Quantum weapon balance adjustments and server stability hotfixes",
+              "badge": "Latest"
+            },
+            {
+              "label": "Beta Test",
+              "detail": "Global closed playtest phase welcoming new contracted operatives",
+              "badge": "Active"
+            },
+            {
+              "label": "Roadmap",
+              "detail": "Unreal Engine 5 physics optimizations and upcoming anomaly zone expansions",
+              "badge": "Upcoming"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "activematter.blog System Requirements",
+          "description": "This module provides minimum and recommended hardware requirements, supported platforms, and technical information. It helps players check whether their devices can run the game smoothly.",
+          "href": "/system/active-matter-system-requirements",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "OS",
+              "detail": "Windows 10 / Windows 11 (64-bit modern operating system required)"
+            },
+            {
+              "label": "CPU",
+              "detail": "Intel Core i5-8400 / AMD Ryzen 5 2600 (Recommended: i7-10700 / Ryzen 7 3700X)"
+            },
+            {
+              "label": "RAM",
+              "detail": "16 GB RAM minimum for stable Unreal Engine 5 performance and large map caching"
+            },
+            {
+              "label": "GPU",
+              "detail": "NVIDIA GeForce GTX 1060 (6GB) minimum; RTX 3060 / Radeon RX 6700 XT recommended"
+            },
+            {
+              "label": "DirectX",
+              "detail": "Version 12 with DirectX Raytracing (DXR) support recommended"
+            },
+            {
+              "label": "Storage",
+              "detail": "70 GB available space on high-speed Solid State Drive (SSD strongly recommended)"
             }
           ]
         }
@@ -300,27 +379,27 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about My Seafood Stand.",
+      "description": "Quick answers to common questions about activematter.blog and Active Matter gameplay.",
       "items": [
         {
-          "question": "What is My Seafood Stand?",
-          "answer": "My Seafood Stand is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "question": "What is activematter.blog Wiki?",
+          "answer": "activematter.blog is an independent community wiki covering Active Matter, the futuristic tactical extraction shooter powered by Unreal Engine 5. We provide weapon statistics, raid guides, anomaly mechanics, and loadout strategies."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "What core gameplay features does activematter.blog cover for Active Matter?",
+          "answer": "activematter.blog covers tactical PvPvE combat, quantum extraction loops, syndicate factions, weapons customization, and survival mechanics in anomaly zones."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How can beginners improve their survival rate using activematter.blog guides?",
+          "answer": "New players can follow the beginner guides on activematter.blog to learn safe zone navigation, quantum particle harvesting, and secure extraction point tactics."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "Are weapon stats and gear rankings regularly updated on activematter.blog?",
+          "answer": "Yes, activematter.blog updates firearm performance, attachment tiers, and armor ratings alongside official playtest patches and balance updates."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Where can players find system requirements and release details on activematter.blog?",
+          "answer": "Visit the system and release sections on activematter.blog for complete PC hardware benchmarks, beta playtest schedules, and platform launch information."
         }
       ]
     },
