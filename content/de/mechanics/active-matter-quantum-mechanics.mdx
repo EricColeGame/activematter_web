@@ -64,10 +64,10 @@ Dieser Ansatz modelliert die Bewegung der Falle über das Active Ornstein-Uhlenb
 
 | Modellierungsansatz | Grundgleichung | Primärer aktiver Parameter | Typische experimentelle Analogie |
 | :--- | :--- | :--- | :--- |
-| **Bewegte harmonische Falle (AOUP)** | $\dot{\mathbf{r}}_0 = \mathbf{v}_a$, $\tau \dot{\mathbf{v}}_a = -\mathbf{v}_a + \sqrt{2D} \boldsymbol{\xi}(t)$ | Persistenzzeit ($\tau$), Aktive Diffusion ($D$) | Gesteuerte optische Pinzetten, die kalte Atome halten |
-| **Lindblad-Mastergleichung** | $\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \mathcal{D}[L_k]\rho$ | Nicht-thermische Sprungoperatoren ($L_k$) | Hohlraum-QED gekoppelt an Nichtgleichgewichts-Photonenbäder |
-| **Caldeira-Leggett-Aktivbad** | $H_{int} = q \sum_j c_j x_j + H_{drive}(t)$ | Gefärbte nicht-markowsche Spektraldichte | Gefangene Ionen, die mit getriebenen Schwingungsmoden wechselwirken |
-| **Chiraler nicht-hermitescher Hamiltonoperator** | $H_{eff} = H_0 - i\Gamma + \mathbf{v}_{eff} \cdot \mathbf{p}$ | Imaginäre Eichfelder / Nicht-hermitesche Drift | Photonische Gitter mit asymmetrischer Kopplung |
+| **Bewegte harmonische Falle (AOUP)** | $\dot(r)_0 = v_a$, $\tau \dot(v)_a = -v_a + sqrt(2D) xi(t)$ | Persistenzzeit ($\tau$), Aktive Diffusion ($D$) | Gesteuerte optische Pinzetten, die kalte Atome halten |
+| **Lindblad-Mastergleichung** | $(d\rho)/(dt) = -(i)/(\hbar)[H, \rho] + \sum_k D[L_k]\rho$ | Nicht-thermische Sprungoperatoren ($L_k$) | Hohlraum-QED gekoppelt an Nichtgleichgewichts-Photonenbäder |
+| **Caldeira-Leggett-Aktivbad** | $H_int = q \sum_j c_j x_j + H_drive(t)$ | Gefärbte nicht-markowsche Spektraldichte | Gefangene Ionen, die mit getriebenen Schwingungsmoden wechselwirken |
+| **Chiraler nicht-hermitescher Hamiltonoperator** | $H_eff = H_0 - i\Gamma + v_eff \cdot p$ | Imaginäre Eichfelder / Nicht-hermitesche Drift | Photonische Gitter mit asymmetrischer Kopplung |
 
 ### Offene Quantendissipation vs. unitäre Dynamik
 
@@ -81,15 +81,15 @@ In rein nicht-dissipativen (unitären) Quantenregimen führt die **Quantenmechan
 
 Die zentrale Kennzahl zur Analyse aktiver Systeme ist die mittlere quadratische Verschiebung (Mean-Square Displacement, MSD), definiert als:
 
-$$\text{MSD}(t) = \langle (\mathbf{r}(t) - \mathbf{r}(0))^2 \rangle$$
+$$MSD(t) = \langle (r(t) - r(0))^2 \rangle$$
 
-In klassischen aktiven Systemen zeigen Teilchen auf kurzen Zeitskalen aufgrund des persistenten Schwimmens ein ballistisches Regime ($\text{MSD} \propto t^2$), bevor sie auf Zeitskalen, die länger als die Persistenzzeit $\tau$ sind, in ein verstärktes aktiv-diffusives Regime ($\text{MSD} \propto 2d D_{\text{eff}} t$) übergehen.
+In klassischen aktiven Systemen zeigen Teilchen auf kurzen Zeitskalen aufgrund des persistenten Schwimmens ein ballistisches Regime ($MSD \propto t^2$), bevor sie auf Zeitskalen, die länger als die Persistenzzeit $\tau$ sind, in ein verstärktes aktiv-diffusives Regime ($MSD \propto 2d D_eff t$) übergehen.
 
 In der **Quantenmechanik aktiver Materie** weist die MSD reichhaltige dynamische Skalierungsregime auf, die durch den Wettbewerb zwischen quantenmechanischer kinetischer Energie, Potenzialeinschluss und aktiven Fluktuationen getrieben werden.
 
 | Zeitregime | Klassisch passiv | Klassisch aktiv (AOUP) | Quantenpassiv (freies Teilchen) | Quantenaktiv (nicht-dissipativ) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Ultrakurz ($t \ll t_{col}$)** | Ballistisch ($\sim t^2$) | Ballistisch ($\sim t^2$) | Quantenballistisch ($\sim t^2$) | Skalierung höherer Ordnung ($\sim t^3$ bis $t^4$) |
+| **Ultrakurz ($t \ll t_col$)** | Ballistisch ($\sim t^2$) | Ballistisch ($\sim t^2$) | Quantenballistisch ($\sim t^2$) | Skalierung höherer Ordnung ($\sim t^3$ bis $t^4$) |
 | **Intermediär ($t \sim \tau$)** | Diffusiv ($\sim t$) | Superdiffusiv / Ballistisch | Sich ausbreitendes Wellenpaket ($\sim t^2$) | Quantenaktive Interferenzregime |
 | **Langzeit ($t \gg \tau$)** | Thermische Diffusion ($\sim t$) | Verstärkte aktive Diffusion ($\sim t$) | Wellenpaketdispersion ($\sim t^2$) | Nichtgleichgewichts-aktiver stationärer Zustand |
 
@@ -108,7 +108,7 @@ Die Übertragung theoretischer Modelle der **Quantenmechanik aktiver Materie** a
 | Architektur | Physikalische Implementierung | Quantenfreiheitsgrad | Aktiver Antriebsmechanismus |
 | :--- | :--- | :--- | :--- |
 | **Ultrakalte neutrale Atome** | Rubidium-/Cäsium-Atome in optischen Gittern | Schwerpunktsbewegung, räumliche Wellenfunktion | Dynamische Phasenmodulation von Gitterlasern |
-| **Gefangene Ionenketten** | Lasergekühlte $^{171}\text{Yb}^+$- oder $^{40}\text{Ca}^+$-Ionen | Phononische Schwingungsmoden / Interne Spins | Stochastisches elektrisches Feldrauschen an Fallenelektroden |
+| **Gefangene Ionenketten** | Lasergekühlte $^171Yb^+$- oder $^40Ca^+$-Ionen | Phononische Schwingungsmoden / Interne Spins | Stochastisches elektrisches Feldrauschen an Fallenelektroden |
 | **Exziton-Polariton-Kondensate** | Halbleiter-Mikrokavitäten | Makroskopisches Quantenfluid-Kondensat | Asymmetrisches nicht-resonantes optisches Pumpen |
 | **Supraleitende Qubits** | Transmon-Qubit-Arrays | Mikrowellen-Photonenzustände | Nicht-reziproke aktive Mikrowellenantriebe |
 | **Levitierte Optomechanik** | Nanopartikel im Hochvakuum | Schwingungszustände des Schwerpunkts | Feedback-gesteuerte optische Pinzetten mit gefärbtem Rauschen |

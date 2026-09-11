@@ -64,7 +64,7 @@ Die Verweilzeit eines selbstangetriebenen Partikels an einer festen Begrenzung h
 
 | Geometrieprofil des Hindernisses | Nettokraftausbeute | Fangeffizienz | Hydrodynamischer Widerstand | Ideale Anwendung |
 | :--- | :--- | :--- | :--- | :--- |
-| **Symmetrischer Zylinder** | Null ($0\ \text{pN}$) | Gleichmäßig ($0\%$ Asymmetrie) | Moderat | Passiver Tracer / Kontrolle |
+| **Symmetrischer Zylinder** | Null ($0\ pN$) | Gleichmäßig ($0\%$ Asymmetrie) | Moderat | Passiver Tracer / Kontrolle |
 | **Einfaches Dreieck / Keil** | Gering bis moderat | Moderate Frontaufnahme | Hohe rückseitige Ablösung | Einfache Mikroratschen |
 | **Asymmetrisches Mikrozahnrad** | Kontinuierliches Drehmoment | Lokalisierte Zahnretention | Geringer Drehwiderstand | Rotatorische Mikroaktoren |
 | **Drachenform mit Seitenflügeln** | Maximal gerichtete Kraft | Hoher konkaver Einschluss | Optimiertes Vorwärtsgleiten | Autonome lineare Träger |
@@ -97,10 +97,10 @@ Gewonnene Leistung (P)
 
 | Schwarmdichte-Regime | Effektive Leistungsskalierung | Rotationskorrelation | Jamming-Wahrscheinlichkeit | Dominante Mechanik |
 | :--- | :--- | :--- | :--- | :--- |
-| **Verdünntes Gas ($\Phi < 0{,}05$)** | Linear ($P \propto N$) | Kurz ($< \tau_r$) | Vernachlässigbar ($< 1\%$) | Stochastische Einzelpartikelstöße |
-| **Halbverdünnt ($\Phi \approx 0{,}15$)** | Überlinear ($P \propto N^{1{,}2}$) | Verstärkte Kontaktblockierung | Gering ($< 5\%$) | Vermittelte Randkooperativität |
-| **Optimaler Schwarm ($\Phi \approx 0{,}30$)** | Maximale Motorleistung | Maximaler Richtungsschub | Moderat ($10\text{--}15\%$) | Selbstorganisiertes dynamisches Clustern |
-| **Dicht gepackt ($\Phi > 0{,}50$)** | Sublinear / Abnehmend | Blockierter Rand | Kritisch ($> 60\%$) | Sterische Hinderung & Geschwindigkeitslöschung |
+| **Verdünntes Gas ($\Phi < 0(,)05$)** | Linear ($P \propto N$) | Kurz ($< \tau_r$) | Vernachlässigbar ($< 1\%$) | Stochastische Einzelpartikelstöße |
+| **Halbverdünnt ($\Phi \approx 0(,)15$)** | Überlinear ($P \propto N^1(,2)$) | Verstärkte Kontaktblockierung | Gering ($< 5\%$) | Vermittelte Randkooperativität |
+| **Optimaler Schwarm ($\Phi \approx 0(,)30$)** | Maximale Motorleistung | Maximaler Richtungsschub | Moderat (10%–15%) | Selbstorganisiertes dynamisches Clustern |
+| **Dicht gepackt ($\Phi > 0(,)50$)** | Sublinear / Abnehmend | Blockierter Rand | Kritisch ($> 60\%$) | Sterische Hinderung & Geschwindigkeitslöschung |
 
 ---
 
@@ -110,11 +110,11 @@ Die Entwicklung einer spezialisierten Active-Matter-Physik-Engine erfordert nume
 
 Die Standard-Bewegungsgleichungen für ein aktives Brownsches Partikel (ABP) in zwei Dimensionen werden durch gekoppelte stochastische Differentialgleichungen beschrieben:
 
-$$\frac{d\mathbf{r}_i}{dt} = v_0 \mathbf{e}(\theta_i) + \mu \mathbf{F}_i + \sqrt{2 D_T} \boldsymbol{\xi}_i^T(t)$$
+$$(dr_i)/(dt) = v_0 e(\theta_i) + \mu F_i + sqrt(2 D_T) xi_i^T(t)$$
 
-$$\frac{d\theta_i}{dt} = \sqrt{2 D_R} \xi_i^R(t)$$
+$$(d\theta_i)/(dt) = sqrt(2 D_R) \xi_i^R(t)$$
 
-Wobei $v_0$ die intrinsische Schwimmgeschwindigkeit darstellt, $\mathbf{e}(\theta_i) = (\cos\theta_i, \sin\theta_i)$ die Antriebsorientierung ist, $\mu$ die Mobilität angibt, $D_T$ und $D_R$ translationale und rotationale Diffusionskoeffizienten sind und $\boldsymbol{\xi}(t)$ Gaußsches weißes Rauschen repräsentiert.
+Wobei $v_0$ die intrinsische Schwimmgeschwindigkeit darstellt, $e(\theta_i) = (\cos\theta_i, \sin\theta_i)$ die Antriebsorientierung ist, $\mu$ die Mobilität angibt, $D_T$ und $D_R$ translationale und rotationale Diffusionskoeffizienten sind und $xi(t)$ Gaußsches weißes Rauschen repräsentiert.
 
 ```
 +---------------------------------------------------------------+
@@ -133,11 +133,11 @@ Erfahrungsberichte von Simulationsingenieuren betonen, dass die räumliche Parti
 
 | Phase der Simulationspipeline | Berechnungsmethode | Zeitkomplexität | Implementierungsschwerpunkt |
 | :--- | :--- | :--- | :--- |
-| **Räumliche Partitionierung** | Verkettete Zelllisten / Uniforme Gitter | $\mathcal{O}(N)$ | Dynamisches Binning bei starker Clusterbildung |
-| **Orientierungsaktualisierung** | Stochastische Euler-Maruyama-Integration | $\mathcal{O}(N)$ | Präzise Abtastung der Rotationsdiffusion |
-| **Randauflösung** | Weeks-Chandler-Andersen-Potenzial (WCA) | $\mathcal{O}(N_{\text{surface}})$ | Weicher Abstoßungskontakt zur Vermeidung von Überlappungen |
-| **Hindernis-Integration** | Überdämpfte Starrkörperdynamik | $\mathcal{O}(1)$ | Kraft-/Drehmomentakkumulation gegen Last |
-| **Hydrodynamische Kopplung** | Multi-Particle Collision Dynamics (MPCD) | $\mathcal{O}(N + N_{\text{fluid}})$ | Weitreichende Fluid-Wechselwirkungen (optional) |
+| **Räumliche Partitionierung** | Verkettete Zelllisten / Uniforme Gitter | $O(N)$ | Dynamisches Binning bei starker Clusterbildung |
+| **Orientierungsaktualisierung** | Stochastische Euler-Maruyama-Integration | $O(N)$ | Präzise Abtastung der Rotationsdiffusion |
+| **Randauflösung** | Weeks-Chandler-Andersen-Potenzial (WCA) | $O(N_surface)$ | Weicher Abstoßungskontakt zur Vermeidung von Überlappungen |
+| **Hindernis-Integration** | Überdämpfte Starrkörperdynamik | $O(1)$ | Kraft-/Drehmomentakkumulation gegen Last |
+| **Hydrodynamische Kopplung** | Multi-Particle Collision Dynamics (MPCD) | $O(N + N_fluid)$ | Weitreichende Fluid-Wechselwirkungen (optional) |
 
 ---
 
@@ -172,9 +172,9 @@ Aktuelle Mikrotechnologien nutzen Active-Matter-Konzepte in mehreren Kernbereich
 
 | Anwendungsbereich | Arbeitsmedium | Primärer Mechanismus | Wichtigste Leistungskennzahl |
 | :--- | :--- | :--- | :--- |
-| **Biomedizinische Wirkstoffabgabe** | Magnetotaktische Bakterien / synthetische Mikroschwimmer | Konkaver Frachteinschluss & magnetische Steuerung | Transportgeschwindigkeit ($\mu\text{m/s}$) & Ladekapazität |
+| **Biomedizinische Wirkstoffabgabe** | Magnetotaktische Bakterien / synthetische Mikroschwimmer | Konkaver Frachteinschluss & magnetische Steuerung | Transportgeschwindigkeit ($\mum/s$) & Ladekapazität |
 | **Mikrofluidische Zellsortierung** | *E. coli*- / *Chlamydomonas*-Suspensionen | Geometrische Ratschengleichrichtung | Trennreinheit ($> 95\%$) & Durchsatzrate |
-| **Mikromechanische Aktorik** | Katalytische Janus-Kolloide ($Pt\text{--}SiO_2$) | Drehmomenterzeugung an asymmetrischen Zahnrädern | Kontinuierliche Winkelgeschwindigkeit ($\text{U/min}$) |
+| **Mikromechanische Aktorik** | Katalytische Janus-Kolloide (Pt-SiO2) | Drehmomenterzeugung an asymmetrischen Zahnrädern | Kontinuierliche Winkelgeschwindigkeit ($U/min$) |
 | **Adaptive strukturelle Metamaterialien** | Aktive Netzwerke aus Zytoskelettfilamenten | Motilitätsinduzierte kontraktile Spannungen | Abstimmung des Elastizitätsmoduls & Selbstreparaturrate |
 
 ---

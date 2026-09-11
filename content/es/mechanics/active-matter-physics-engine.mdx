@@ -63,7 +63,7 @@ El tiempo de permanencia de una partícula autopropulsada contra un límite sól
 
 | Perfil geométrico del obstáculo | Rendimiento de fuerza neta | Eficiencia de captura | Arrastre hidrodinámico | Aplicación ideal |
 | :--- | :--- | :--- | :--- | :--- |
-| **Cilindro simétrico** | Cero ($0\ \text{pN}$) | Uniforme ($0\%$ de asimetría) | Moderado | Trazador pasivo / control |
+| **Cilindro simétrico** | Cero ($0\ pN$) | Uniforme ($0\%$ de asimetría) | Moderado | Trazador pasivo / control |
 | **Triángulo simple / Cuña** | Bajo a moderado | Captura frontal moderada | Alta separación trasera | Microtrinquetes básicos |
 | **Microengranaje asimétrico** | Par continuo | Retención localizada en dientes | Bajo arrastre angular | Microactuadores rotativos |
 | **Cometa con alas laterales** | Máxima fuerza dirigida | Alta captura cóncava | Deslizamiento frontal optimizado | Transportadores lineales autónomos |
@@ -97,8 +97,8 @@ Potencia extraída (P)
 | Régimen de densidad del enjambre | Escalado de potencia efectiva | Correlación rotacional | Probabilidad de bloqueo (jamming) | Mecánica dominante |
 | :--- | :--- | :--- | :--- | :--- |
 | **Gas diluido ($\Phi < 0.05$)** | Lineal ($P \propto N$) | Corta ($< \tau_r$) | Despreciable ($< 1\%$) | Colisiones estocásticas de partículas individuales |
-| **Semidiluido ($\Phi \approx 0.15$)** | Superlineal ($P \propto N^{1.2}$) | Bloqueo por contacto mejorado | Baja ($< 5\%$) | Cooperatividad mediada por límites |
-| **Enjambre óptimo ($\Phi \approx 0.30$)** | Rendimiento máximo del motor | Máximo empuje direccional | Moderada ($10\text{--}15\%$) | Agrupamiento dinámico autoorganizado |
+| **Semidiluido ($\Phi \approx 0.15$)** | Superlineal ($P \propto N^1.2$) | Bloqueo por contacto mejorado | Baja ($< 5\%$) | Cooperatividad mediada por límites |
+| **Enjambre óptimo ($\Phi \approx 0.30$)** | Rendimiento máximo del motor | Máximo empuje direccional | Moderada (10%–15%) | Agrupamiento dinámico autoorganizado |
 | **Empaquetamiento denso ($\Phi > 0.50$)** | Sublineal / Decreciente | Límite obstruido | Crítica ($> 60\%$) | Obstrucción estérica y amortiguación de velocidad |
 
 ---
@@ -109,11 +109,11 @@ Desarrollar un motor de física de materia activa especializado requiere esquema
 
 Las ecuaciones estándar de movimiento para una partícula browniana activa (ABP, por sus siglas en inglés) en dos dimensiones se rigen por ecuaciones diferenciales estocásticas acopladas:
 
-$$\frac{d\mathbf{r}_i}{dt} = v_0 \mathbf{e}(\theta_i) + \mu \mathbf{F}_i + \sqrt{2 D_T} \boldsymbol{\xi}_i^T(t)$$
+$$(dr_i)/(dt) = v_0 e(\theta_i) + \mu F_i + sqrt(2 D_T) xi_i^T(t)$$
 
-$$\frac{d\theta_i}{dt} = \sqrt{2 D_R} \xi_i^R(t)$$
+$$(d\theta_i)/(dt) = sqrt(2 D_R) \xi_i^R(t)$$
 
-Donde $v_0$ representa la velocidad de nado intrínseca, $\mathbf{e}(\theta_i) = (\cos\theta_i, \sin\theta_i)$ es la orientación de propulsión, $\mu$ es la movilidad, $D_T$ y $D_R$ son los coeficientes de difusión traslacional y rotacional, y $\boldsymbol{\xi}(t)$ representa el ruido blanco gaussiano.
+Donde $v_0$ representa la velocidad de nado intrínseca, $e(\theta_i) = (\cos\theta_i, \sin\theta_i)$ es la orientación de propulsión, $\mu$ es la movilidad, $D_T$ y $D_R$ son los coeficientes de difusión traslacional y rotacional, y $xi(t)$ representa el ruido blanco gaussiano.
 
 ```
 +---------------------------------------------------------------+
@@ -132,11 +132,11 @@ Los informes de ingenieros de simulación destacan que el particionamiento espac
 
 | Etapa del pipeline de simulación | Método computacional | Complejidad temporal | Enfoque de implementación |
 | :--- | :--- | :--- | :--- |
-| **Particionamiento espacial** | Listas de celdas enlazadas / Cuadrículas uniformes | $\mathcal{O}(N)$ | Agrupamiento dinámico bajo densa aglomeración |
-| **Actualización de orientación** | Integración estocástica de Euler-Maruyama | $\mathcal{O}(N)$ | Muestreo preciso de difusión rotacional |
-| **Resolución de contornos** | Potencial Weeks-Chandler-Andersen (WCA) | $\mathcal{O}(N_{\text{surface}})$ | Contacto repulsivo suave para evitar solapamientos |
-| **Integración del obstáculo** | Dinámica de cuerpos rígidos sobreamortiguada | $\mathcal{O}(1)$ | Acumulación de fuerza/par contra la carga |
-| **Acoplamiento hidrodinámico** | Dinámica de colisión multipartícula (MPCD) | $\mathcal{O}(N + N_{\text{fluid}})$ | Interacciones de fluidos de largo alcance (opcional) |
+| **Particionamiento espacial** | Listas de celdas enlazadas / Cuadrículas uniformes | $O(N)$ | Agrupamiento dinámico bajo densa aglomeración |
+| **Actualización de orientación** | Integración estocástica de Euler-Maruyama | $O(N)$ | Muestreo preciso de difusión rotacional |
+| **Resolución de contornos** | Potencial Weeks-Chandler-Andersen (WCA) | $O(N_surface)$ | Contacto repulsivo suave para evitar solapamientos |
+| **Integración del obstáculo** | Dinámica de cuerpos rígidos sobreamortiguada | $O(1)$ | Acumulación de fuerza/par contra la carga |
+| **Acoplamiento hidrodinámico** | Dinámica de colisión multipartícula (MPCD) | $O(N + N_fluid)$ | Interacciones de fluidos de largo alcance (opcional) |
 
 ---
 
@@ -171,9 +171,9 @@ Las microtecnologías actuales utilizan motores de materia activa en varias áre
 
 | Dominio de aplicación | Medio de trabajo | Mecanismo principal | Métrica de rendimiento clave |
 | :--- | :--- | :--- | :--- |
-| **Administración biomédica de fármacos** | Bacterias magnetotácticas / micronadadores sintéticos | Atrapamiento cóncavo de carga y guía magnética | Velocidad de tránsito ($\mu\text{m/s}$) y capacidad de carga |
+| **Administración biomédica de fármacos** | Bacterias magnetotácticas / micronadadores sintéticos | Atrapamiento cóncavo de carga y guía magnética | Velocidad de tránsito ($\mum/s$) y capacidad de carga |
 | **Clasificación celular microfluídica** | Suspensiones de *E. coli* / *Chlamydomonas* | Rectificación geométrica por trinquete | Pureza de separación ($> 95\%$) y tasa de procesamiento |
-| **Accionamiento micromecánico** | Coloides Janus catalíticos ($Pt\text{--}SiO_2$) | Generación de par en engranajes asimétricos | Velocidad angular continua ($\text{RPM}$) |
+| **Accionamiento micromecánico** | Coloides Janus catalíticos (Pt-SiO2) | Generación de par en engranajes asimétricos | Velocidad angular continua ($RPM$) |
 | **Metamateriales estructurales adaptativos** | Redes de filamentos del citoesqueleto activo | Tensiones contráctiles inducidas por motilidad | Ajuste del módulo elástico y tasa de autorreparación |
 
 ---

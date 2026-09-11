@@ -64,10 +64,10 @@ Este enfoque modela el movimiento de la trampa a través del marco de Partícula
 
 | Enfoque de modelado | Ecuación rectora | Parámetro activo principal | Analogía experimental típica |
 | :--- | :--- | :--- | :--- |
-| **Trampa armónica móvil (AOUP)** | $\dot{\mathbf{r}}_0 = \mathbf{v}_a$, $\tau \dot{\mathbf{v}}_a = -\mathbf{v}_a + \sqrt{2D} \boldsymbol{\xi}(t)$ | Tiempo de persistencia ($\tau$), Difusión activa ($D$) | Pinzas ópticas dirigidas que retienen átomos fríos |
-| **Ecuación maestra de Lindblad** | $\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \mathcal{D}[L_k]\rho$ | Operadores de salto no térmicos ($L_k$) | QED de cavidad acoplada a baños de fotones fuera del equilibrio |
-| **Baño activo de Caldeira-Leggett** | $H_{int} = q \sum_j c_j x_j + H_{drive}(t)$ | Densidad espectral no markoviana coloreada | Iones atrapados que interactúan con modos vibracionales excitados |
-| **Hamiltoniano no hermítico quiral** | $H_{eff} = H_0 - i\Gamma + \mathbf{v}_{eff} \cdot \mathbf{p}$ | Campos gauge imaginarios / Deriva no hermítica | Redes fotónicas con acoplamiento asimétrico |
+| **Trampa armónica móvil (AOUP)** | $\dot(r)_0 = v_a$, $\tau \dot(v)_a = -v_a + sqrt(2D) xi(t)$ | Tiempo de persistencia ($\tau$), Difusión activa ($D$) | Pinzas ópticas dirigidas que retienen átomos fríos |
+| **Ecuación maestra de Lindblad** | $(d\rho)/(dt) = -(i)/(\hbar)[H, \rho] + \sum_k D[L_k]\rho$ | Operadores de salto no térmicos ($L_k$) | QED de cavidad acoplada a baños de fotones fuera del equilibrio |
+| **Baño activo de Caldeira-Leggett** | $H_int = q \sum_j c_j x_j + H_drive(t)$ | Densidad espectral no markoviana coloreada | Iones atrapados que interactúan con modos vibracionales excitados |
+| **Hamiltoniano no hermítico quiral** | $H_eff = H_0 - i\Gamma + v_eff \cdot p$ | Campos gauge imaginarios / Deriva no hermítica | Redes fotónicas con acoplamiento asimétrico |
 
 ### Disipación cuántica abierta frente a dinámica unitaria
 
@@ -81,15 +81,15 @@ Sin embargo, en regímenes cuánticos puramente no disipativos (unitarios), la *
 
 La métrica fundamental para analizar sistemas activos es el desplazamiento cuadrático medio (MSD, por sus siglas en inglés), definido como:
 
-$$\text{MSD}(t) = \langle (\mathbf{r}(t) - \mathbf{r}(0))^2 \rangle$$
+$$MSD(t) = \langle (r(t) - r(0))^2 \rangle$$
 
-En los sistemas activos clásicos, las partículas exhiben un régimen balístico a escalas de tiempo cortas ($\text{MSD} \propto t^2$) debido al nado persistente, antes de pasar a un régimen difusivo activo mejorado ($\text{MSD} \propto 2d D_{\text{eff}} t$) en escalas de tiempo más largas que el tiempo de persistencia $\tau$.
+En los sistemas activos clásicos, las partículas exhiben un régimen balístico a escalas de tiempo cortas ($MSD \propto t^2$) debido al nado persistente, antes de pasar a un régimen difusivo activo mejorado ($MSD \propto 2d D_eff t$) en escalas de tiempo más largas que el tiempo de persistencia $\tau$.
 
 En la **mecánica cuántica de la materia activa**, el MSD muestra ricos regímenes de escala dinámica impulsados por la competencia entre la energía cinética cuántica, el confinamiento del potencial y las fluctuaciones activas.
 
 | Régimen temporal | Pasivo clásico | Activo clásico (AOUP) | Pasivo cuántico (Partícula libre) | Activo cuántico (No disipativo) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Ultracorto ($t \ll t_{col}$)** | Balístico ($\sim t^2$) | Balístico ($\sim t^2$) | Balístico cuántico ($\sim t^2$) | Escala de orden superior ($\sim t^3$ a $t^4$) |
+| **Ultracorto ($t \ll t_col$)** | Balístico ($\sim t^2$) | Balístico ($\sim t^2$) | Balístico cuántico ($\sim t^2$) | Escala de orden superior ($\sim t^3$ a $t^4$) |
 | **Intermedio ($t \sim \tau$)** | Difusivo ($\sim t$) | Superdifusivo / Balístico | Paquete de ondas en dispersión ($\sim t^2$) | Regímenes de interferencia cuántico-activa |
 | **Largo plazo ($t \gg \tau$)** | Difusión térmica ($\sim t$) | Difusión activa mejorada ($\sim t$) | Dispersión del paquete de ondas ($\sim t^2$) | Estado estacionario activo fuera del equilibrio |
 
@@ -108,7 +108,7 @@ Llevar los modelos teóricos de la **mecánica cuántica de la materia activa** 
 | Arquitectura | Implementación física | Grado de libertad cuántico | Mecanismo de excitación activa |
 | :--- | :--- | :--- | :--- |
 | **Átomos neutros ultrafríos** | Átomos de rubidio/cesio en redes ópticas | Movimiento del centro de masa, función de onda espacial | Modulación de fase dinámica de láseres de red |
-| **Cadenas de iones atrapados** | Iones de $^{171}\text{Yb}^+$ o $^{40}\text{Ca}^+$ enfriados por láser | Modos vibracionales fonónicos / Espines internos | Ruido de campo eléctrico estocástico aplicado a los electrodos de la trampa |
+| **Cadenas de iones atrapados** | Iones de $^171Yb^+$ o $^40Ca^+$ enfriados por láser | Modos vibracionales fonónicos / Espines internos | Ruido de campo eléctrico estocástico aplicado a los electrodos de la trampa |
 | **Condensados de excitón-polaritón** | Microcavidades semiconductoras | Condensado de fluido cuántico macroscópico | Bombeo óptico no resonante asimétrico |
 | **Qubits superconductores** | Matrices de qubits transmon | Estados fotónicos de microondas | Excitaciones de microondas activas no recíprocas |
 | **Optomecánica levitada** | Nanopartículas en alto vacío | Estados vibracionales del centro de masa | Pinzas ópticas controladas por retroalimentación con ruido coloreado |

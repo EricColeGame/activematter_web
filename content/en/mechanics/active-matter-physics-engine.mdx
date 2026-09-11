@@ -63,7 +63,7 @@ The dwell time of a self-propelled particle against a solid boundary depends hea
 
 | Obstacle Geometry Profile | Net Force Output | Trapping Efficiency | Hydrodynamic Drag | Ideal Application |
 | :--- | :--- | :--- | :--- | :--- |
-| **Symmetric Cylinder** | Zero ($0\ \text{pN}$) | Uniform ($0\%$ asymmetry) | Moderate | Passive tracer / control |
+| **Symmetric Cylinder** | Zero ($0\ pN$) | Uniform ($0\%$ asymmetry) | Moderate | Passive tracer / control |
 | **Simple Triangle / Wedge** | Low to Moderate | Moderate front capture | High rear separation | Basic micro-ratchets |
 | **Asymmetric Micro-Gear** | Continuous Torque | Localized tooth retention | Low angular drag | Rotary micro-actuators |
 | **Kite with Lateral Wings** | Maximum Directed Force | High concave entrapment | Optimized forward glide | Autonomous linear carriers |
@@ -97,8 +97,8 @@ Extracted Power (P)
 | Swarm Density Regime | Effective Power Scaling | Rotational Correlation | Jamming Probability | Dominant Mechanics |
 | :--- | :--- | :--- | :--- | :--- |
 | **Dilute Gas ($\Phi < 0.05$)** | Linear ($P \propto N$) | Short ($< \tau_r$) | Negligible ($< 1\%$) | Single-particle stochastic collisions |
-| **Semi-Dilute ($\Phi \approx 0.15$)** | Super-linear ($P \propto N^{1.2}$) | Enhanced contact lock | Low ($< 5\%$) | Mediated boundary cooperativity |
-| **Optimal Swarm ($\Phi \approx 0.30$)** | Peak Engine Output | Maximum directional thrust | Moderate ($10\text{--}15\%$) | Self-organized dynamic clustering |
+| **Semi-Dilute ($\Phi \approx 0.15$)** | Super-linear ($P \propto N^1.2$) | Enhanced contact lock | Low ($< 5\%$) | Mediated boundary cooperativity |
+| **Optimal Swarm ($\Phi \approx 0.30$)** | Peak Engine Output | Maximum directional thrust | Moderate (10%–15%) | Self-organized dynamic clustering |
 | **Dense Packed ($\Phi > 0.50$)** | Sub-linear / Declining | Clogged boundary | Critical ($> 60\%$) | Steric obstruction & velocity quenching |
 
 ---
@@ -109,11 +109,11 @@ Developing a specialized active matter physics engine requires numerical integra
 
 The standard equations of motion for an active Brownian particle (ABP) in two dimensions are governed by coupled stochastic differential equations:
 
-$$\frac{d\mathbf{r}_i}{dt} = v_0 \mathbf{e}(\theta_i) + \mu \mathbf{F}_i + \sqrt{2 D_T} \boldsymbol{\xi}_i^T(t)$$
+$$(dr_i)/(dt) = v_0 e(\theta_i) + \mu F_i + sqrt(2 D_T) xi_i^T(t)$$
 
-$$\frac{d\theta_i}{dt} = \sqrt{2 D_R} \xi_i^R(t)$$
+$$(d\theta_i)/(dt) = sqrt(2 D_R) \xi_i^R(t)$$
 
-Where $v_0$ represents the intrinsic swim speed, $\mathbf{e}(\theta_i) = (\cos\theta_i, \sin\theta_i)$ is the propulsion orientation, $\mu$ is mobility, $D_T$ and $D_R$ are translational and rotational diffusion coefficients, and $\boldsymbol{\xi}(t)$ represents Gaussian white noise.
+Where $v_0$ represents the intrinsic swim speed, $e(\theta_i) = (\cos\theta_i, \sin\theta_i)$ is the propulsion orientation, $\mu$ is mobility, $D_T$ and $D_R$ are translational and rotational diffusion coefficients, and $xi(t)$ represents Gaussian white noise.
 
 ```
 +---------------------------------------------------------------+
@@ -132,11 +132,11 @@ Community reports from simulation engineers emphasize that cell-list spatial par
 
 | Simulation Pipeline Stage | Computational Method | Time Complexity | Implementation Focus |
 | :--- | :--- | :--- | :--- |
-| **Spatial Partitioning** | Linked cell-lists / Uniform grids | $\mathcal{O}(N)$ | Dynamic binning under severe clustering |
-| **Orientation Update** | Euler-Maruyama stochastic integration | $\mathcal{O}(N)$ | Accurate rotational diffusion sampling |
-| **Boundary Resolution** | Weeks-Chandler-Andersen (WCA) potential | $\mathcal{O}(N_{\text{surface}})$ | Soft repulsive contact to avoid overlap |
-| **Obstacle Integration** | Overdamped rigid-body dynamics | $\mathcal{O}(1)$ | Force/torque accumulation against load |
-| **Hydrodynamic Coupling** | Multi-Particle Collision Dynamics (MPCD) | $\mathcal{O}(N + N_{\text{fluid}})$ | Long-range fluid interactions (optional) |
+| **Spatial Partitioning** | Linked cell-lists / Uniform grids | $O(N)$ | Dynamic binning under severe clustering |
+| **Orientation Update** | Euler-Maruyama stochastic integration | $O(N)$ | Accurate rotational diffusion sampling |
+| **Boundary Resolution** | Weeks-Chandler-Andersen (WCA) potential | $O(N_surface)$ | Soft repulsive contact to avoid overlap |
+| **Obstacle Integration** | Overdamped rigid-body dynamics | $O(1)$ | Force/torque accumulation against load |
+| **Hydrodynamic Coupling** | Multi-Particle Collision Dynamics (MPCD) | $O(N + N_fluid)$ | Long-range fluid interactions (optional) |
 
 ---
 
@@ -171,9 +171,9 @@ Current micro-technologies utilize active matter engines across several core dom
 
 | Application Domain | Working Medium | Primary Mechanism | Key Performance Metric |
 | :--- | :--- | :--- | :--- |
-| **Biomedical Drug Delivery** | Magnetotactic bacteria / synthetic micro-swimmers | Concave cargo trapping & magnetic steering | Delivery transit speed ($\mu\text{m/s}$) & payload capacity |
+| **Biomedical Drug Delivery** | Magnetotactic bacteria / synthetic micro-swimmers | Concave cargo trapping & magnetic steering | Delivery transit speed ($\mum/s$) & payload capacity |
 | **Microfluidic Cell Sorting** | *E. coli* / *Chlamydomonas* suspensions | Geometric ratchet rectification | Separation purity ($> 95\%$) & throughput rate |
-| **Micro-Mechanical Actuation** | Catalytic Janus colloids ($Pt\text{--}SiO_2$) | Torque generation on asymmetric gears | Continuous angular velocity ($\text{RPM}$) |
+| **Micro-Mechanical Actuation** | Catalytic Janus colloids (Pt-SiO2) | Torque generation on asymmetric gears | Continuous angular velocity ($RPM$) |
 | **Adaptive Structural Metamaterials** | Active cytoskeletal filament networks | Motility-induced contractile stresses | Elastic modulus tuning & self-repair rate |
 
 ---

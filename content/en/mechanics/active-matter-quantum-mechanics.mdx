@@ -64,10 +64,10 @@ This approach models the trap's motion via the Active Ornstein-Uhlenbeck Particl
 
 | Modeling Approach | Governing Equation | Primary Active Parameter | Typical Experimental Analogy |
 | :--- | :--- | :--- | :--- |
-| **Moving Harmonic Trap (AOUP)** | $\dot{\mathbf{r}}_0 = \mathbf{v}_a$, $\tau \dot{\mathbf{v}}_a = -\mathbf{v}_a + \sqrt{2D} \boldsymbol{\xi}(t)$ | Persistence time ($\tau$), Active diffusion ($D$) | Steered optical tweezers holding cold atoms |
-| **Lindblad Master Equation** | $\frac{d\rho}{dt} = -\frac{i}{\hbar}[H, \rho] + \sum_k \mathcal{D}[L_k]\rho$ | Non-thermal jump operators ($L_k$) | Cavity QED coupled to non-equilibrium photon baths |
-| **Caldeira-Leggett Active Bath** | $H_{int} = q \sum_j c_j x_j + H_{drive}(t)$ | Colored non-Markovian spectral density | Trapped ions interacting with driven vibrational modes |
-| **Chiral Non-Hermitian Hamiltonian** | $H_{eff} = H_0 - i\Gamma + \mathbf{v}_{eff} \cdot \mathbf{p}$ | Imaginary gauge fields / Non-Hermitian drift | Photonic lattices with asymmetric coupling |
+| **Moving Harmonic Trap (AOUP)** | $\dot(r)_0 = v_a$, $\tau \dot(v)_a = -v_a + sqrt(2D) xi(t)$ | Persistence time ($\tau$), Active diffusion ($D$) | Steered optical tweezers holding cold atoms |
+| **Lindblad Master Equation** | $(d\rho)/(dt) = -(i)/(\hbar)[H, \rho] + \sum_k D[L_k]\rho$ | Non-thermal jump operators ($L_k$) | Cavity QED coupled to non-equilibrium photon baths |
+| **Caldeira-Leggett Active Bath** | $H_int = q \sum_j c_j x_j + H_drive(t)$ | Colored non-Markovian spectral density | Trapped ions interacting with driven vibrational modes |
+| **Chiral Non-Hermitian Hamiltonian** | $H_eff = H_0 - i\Gamma + v_eff \cdot p$ | Imaginary gauge fields / Non-Hermitian drift | Photonic lattices with asymmetric coupling |
 
 ### Open Quantum Dissipation vs. Unitary Dynamics
 
@@ -81,15 +81,15 @@ However, in purely nondissipative (unitary) quantum regimes, **Active Matter qua
 
 The hallmark metric for analyzing active systems is the Mean-Square Displacement (MSD), defined as:
 
-$$\text{MSD}(t) = \langle (\mathbf{r}(t) - \mathbf{r}(0))^2 \rangle$$
+$$MSD(t) = \langle (r(t) - r(0))^2 \rangle$$
 
-In classical active systems, particles exhibit a ballistic regime at short timescales ($\text{MSD} \propto t^2$) due to persistent swimming, before crossing over to an enhanced active diffusive regime ($\text{MSD} \propto 2d D_{\text{eff}} t$) at timescales longer than the persistence time $\tau$.
+In classical active systems, particles exhibit a ballistic regime at short timescales ($MSD \propto t^2$) due to persistent swimming, before crossing over to an enhanced active diffusive regime ($MSD \propto 2d D_eff t$) at timescales longer than the persistence time $\tau$.
 
 In **Active Matter quantum mechanics**, the MSD showcases rich dynamical scaling regimes driven by the competition between quantum kinetic energy, potential confinement, and active fluctuations.
 
 | Time Regime | Classical Passive | Classical Active (AOUP) | Quantum Passive (Free Particle) | Quantum Active (Nondissipative) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Ultra-Short ($t \ll t_{col}$)** | Ballistic ($\sim t^2$) | Ballistic ($\sim t^2$) | Quantum Ballistic ($\sim t^2$) | Higher-Order Scaling ($\sim t^3$ to $t^4$) |
+| **Ultra-Short ($t \ll t_col$)** | Ballistic ($\sim t^2$) | Ballistic ($\sim t^2$) | Quantum Ballistic ($\sim t^2$) | Higher-Order Scaling ($\sim t^3$ to $t^4$) |
 | **Intermediate ($t \sim \tau$)** | Diffusive ($\sim t$) | Superdiffusive / Ballistic | Spreading wavepacket ($\sim t^2$) | Quantum-Active Interference Regimes |
 | **Long-Time ($t \gg \tau$)** | Thermal Diffusion ($\sim t$) | Enhanced Active Diffusion ($\sim t$) | Wavepacket dispersion ($\sim t^2$) | Non-Equilibrium Active Steady State |
 
@@ -108,7 +108,7 @@ Translating theoretical models of **Active Matter quantum mechanics** into physi
 | Architecture | Physical Implementation | Quantum Degree of Freedom | Active Driving Mechanism |
 | :--- | :--- | :--- | :--- |
 | **Ultracold Neutral Atoms** | Rubidium/Cesium atoms in optical lattices | Center-of-mass motion, spatial wavefunction | Dynamic phase modulation of lattice lasers |
-| **Trapped Ion Chains** | Laser-cooled $^{171}\text{Yb}^+$ or $^{40}\text{Ca}^+$ ions | Phononic vibrational modes / Internal spins | Stochastic electric field noise applied to trap electrodes |
+| **Trapped Ion Chains** | Laser-cooled $^171Yb^+$ or $^40Ca^+$ ions | Phononic vibrational modes / Internal spins | Stochastic electric field noise applied to trap electrodes |
 | **Exciton-Polariton Condensates** | Semiconductor microcavities | Macroscopic quantum fluid condensate | Asymmetric non-resonant optical pumping |
 | **Superconducting Qubits** | Transmon qubit arrays | Microwave photonic states | Non-reciprocal active microwave drives |
 | **Levitated Optomechanics** | Nanoparticles in high vacuum | Center-of-mass vibrational states | Feedback-controlled optical tweezers with colored noise |
