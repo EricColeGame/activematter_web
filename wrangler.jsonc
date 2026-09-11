@@ -1,5 +1,5 @@
 {
-  "name": "vvultimatum-sbs",
+  "name": "activematter-blog",
   "compatibility_date": "2024-09-01",
   "workers_dev": false,
   "assets": {
@@ -8,6 +8,10 @@
   "routes": [
     {
       "pattern": "activematter.blog",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.activematter.blog",
       "custom_domain": true
     }
   ]
