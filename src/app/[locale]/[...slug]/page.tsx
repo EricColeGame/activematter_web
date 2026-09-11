@@ -30,7 +30,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale; slug: string[] }> }): Promise<Metadata> {
   const { locale, slug } = await params;
   const messages = (await getMessages({ locale })) as Messages;
-  if (slug.length === 1 && CONTENT_TYPES.includes(slug[0])) {
+  if (slug.length === 1 && (CONTENT_TYPES as readonly string[]).includes(slug[0])) {
     const ct = slug[0];
     const ctTitle = ct.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
     const ctMessages = (messages as unknown as Record<string, Record<string, string>>)[ct];
@@ -55,7 +55,7 @@ export default async function SlugPage({ params }: { params: Promise<{ locale: L
 }
 
 async function NavigationPage({ locale, contentType, navGroups }: { locale: Locale; contentType: string; navGroups: import("@/lib/content").NavGroup[] }) {
-  if (!CONTENT_TYPES.includes(contentType)) notFound();
+  if (!(CONTENT_TYPES as readonly string[]).includes(contentType)) notFound();
   const messages = (await getMessages({ locale })) as Messages;
   const items = await getAllContent(contentType, locale);
   const listData = { "@context": "https://schema.org", "@type": "ItemList", name: `${contentType} — ${siteConfig.name}`, itemListElement: items.map((item, index) => ({ "@type": "ListItem", position: index + 1, url: `${siteUrl}/${contentType}/${item.slug}`, name: item.metadata.title })) };
@@ -69,7 +69,7 @@ async function NavigationPage({ locale, contentType, navGroups }: { locale: Loca
 }
 
 async function DetailPage({ locale, contentType, slug, navGroups }: { locale: Locale; contentType: string; slug: string[]; navGroups: import("@/lib/content").NavGroup[] }) {
-  if (!CONTENT_TYPES.includes(contentType)) notFound();
+  if (!(CONTENT_TYPES as readonly string[]).includes(contentType)) notFound();
   const messages = (await getMessages({ locale })) as Messages;
   const item = await getContent(contentType, slug, locale);
   if (!item) notFound();
