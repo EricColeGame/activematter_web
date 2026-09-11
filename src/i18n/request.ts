@@ -5,6 +5,13 @@ import en from "@/locales/en.json";
 
 type Messages = typeof en;
 
+const messagesMap: Record<string, () => Promise<{ default: Messages }>> = {
+  "en": () => import("@/locales/en.json"),
+  "ru": () => import("@/locales/ru.json"),
+  "de": () => import("@/locales/de.json"),
+  "es": () => import("@/locales/es.json"),
+};
+
 function deepMerge<T>(base: T, override: Partial<T>): T {
   if (
     typeof base !== "object" ||
@@ -38,12 +45,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
     : routing.defaultLocale;
 
   let localeMessages: Partial<Messages> = {};
-  if (locale !== "en") {
+  if (locale !== "en" && messagesMap[locale]) {
     try {
-      const imported = await import(`@/locales/${locale}.json`);
-      localeMessages = imported.default || imported;
+      const imported = await messagesMap[locale]();
+      localeMessages = (imported.default || imported) as Partial<Messages>;
     } catch {
-      // Fallback cleanly to en if locale json doesn't exist yet
       localeMessages = {};
     }
   }
