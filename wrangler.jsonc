@@ -7,7 +7,7 @@
   },
   "routes": [
     {
-      "pattern": "activematter.blog/*",
+      "pattern": "activematter.blog",
       "custom_domain": true
     }
   ]
