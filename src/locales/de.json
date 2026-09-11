@@ -1,1 +1,481 @@
-{}
+{
+  "site": {
+    "name": "Active Matter Wiki",
+    "shortName": "Active Matter",
+    "tagline": "Waffen, Guides & Updates",
+    "description": "Umfassende Active Matter Wiki mit Waffen-Guides, Gameplay-Tipps, Missionen, Updates und detaillierten Infos für den Sci-Fi-Extraction-Shooter.",
+    "legalNotice": "Inoffizielles Fan-Wiki. Von Spielern für Spieler erstellt."
+  },
+  "nav": {
+    "guide": "Guides",
+    "weapons": "Waffen",
+    "classes": "Klassen",
+    "mechanics": "Mechaniken",
+    "system": "System",
+    "release": "Release"
+  },
+  "home": {
+    "meta": {
+      "title": "Active Matter Wiki - Waffen, Guides & Updates",
+      "description": "Vollständige Active Matter Wiki mit Waffenübersichten, Überlebenstipps, Raid-Strategien, Updates und Analysen zu Quantenanomalien."
+    },
+    "hero": {
+      "eyebrow": "Futuristischer Sci-Fi-Extraction-Shooter",
+      "title": "Active Matter Wiki",
+      "description": "Erkunde die Active Matter Wiki mit taktischen Raid-Guides, Waffenarsenal, Operatoren, Missionen, Updates und Quantenanomalien.",
+      "stats": [
+        "Futuristischer Sci-Fi-Extraction-Shooter",
+        "Waffen & Loadouts",
+        "Missionen & Raid-Strategie",
+        "Wöchentliche Updates"
+      ],
+      "primaryCta": "Einsteiger-Guide",
+      "secondaryCta": "Waffen-Guide",
+      "tertiaryCta": "Aktuelle Codes",
+      "videoLabel": "Offizieller Gameplay-Trailer"
+    },
+    "updates": {
+      "title": "Neueste Updates",
+      "browse": "Alle Guides ansehen",
+      "viewAll": "Alle anzeigen"
+    },
+    "start": {
+      "eyebrow": "Hier starten",
+      "title": "Deine Reise auf activematter.blog",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Einsteiger-Guide",
+          "description": "Meistere Quantenanomalie-Zonen ab Tag eins mit essenziellen Navigationstipps, Steuerung und Raid-Überleben auf activematter.blog."
+        },
+        {
+          "number": "2",
+          "title": "Schnelles Leveln",
+          "description": "Beschleunige deinen Söldner-Fortschritt und schalte fortschrittliche Operatoren-Perks mit effizienten Raid-Routen frei."
+        },
+        {
+          "number": "3",
+          "title": "Beste Farm-Spots",
+          "description": "Finde dichte Vorkommen aktiver Materie, militärische Prototypen-Lager und seltene Handwerksmaterialien in instabilen Sektoren."
+        },
+        {
+          "number": "4",
+          "title": "Waffen & Loadouts",
+          "description": "Optimiere deine taktischen Loadouts mit den besten Waffenmodifikationen, Ballistik-Optionen und Panzerungswerten."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Beliebte Seiten",
+      "title": "Aktuelle Trends",
+      "quickLinks": [
+        "Einsteiger-Guide",
+        "Waffenliste",
+        "Anomalie-Zonen",
+        "Systemanforderungen"
+      ],
+      "cards": [
+        {
+          "badge": "Einsteiger",
+          "title": "Starter-Guide für Einsteiger",
+          "description": "Grundlegende Spielmechaniken, Raid-Überlebensstrategien und Extraktions-Grundlagen für neue Agenten.",
+          "href": "/guide/active-matter-beginner-guide"
+        },
+        {
+          "badge": "Waffen",
+          "title": "Vollständiges Waffenarsenal",
+          "description": "Detaillierte Werte, Modifikationen und Handhabungsvergleiche aller Waffenklassen.",
+          "href": "/weapons/active-matter-weapons-list"
+        },
+        {
+          "badge": "Mechaniken",
+          "title": "Quantenanomalie-Zonen",
+          "description": "Überlebe schwankende Naturgesetze, Gravitationsanomalien und tödliche Raum-Zeit-Verzerrungen.",
+          "href": "/mechanics/active-matter-anomaly-zones"
+        },
+        {
+          "badge": "Kampf",
+          "title": "Beste Waffen Tier-Liste",
+          "description": "Leistungsstärkste Sturmgewehre, Präzisionsscharfschützen und Durchschlagswaffen im Raid-Ranking.",
+          "href": "/weapons/active-matter-best-weapons"
+        },
+        {
+          "badge": "Klassen",
+          "title": "Operatoren & Syndikate",
+          "description": "Übersicht über spielbare Söldner, Fraktionshintergründe und taktische Fähigkeiten.",
+          "href": "/classes/active-matter-operators"
+        },
+        {
+          "badge": "System",
+          "title": "PC-Systemanforderungen",
+          "description": "Offizielle Mindest- und empfohlene Hardware-Voraussetzungen für flüssiges Unreal Engine 5 Gameplay.",
+          "href": "/system/active-matter-system-requirements"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Was ist Active Matter?",
+      "paragraphs": [
+        "Active Matter ist ein realistischer taktischer Extraction-Shooter in einem Multiversum, das durch Quanteninstabilität zerrissen wurde. Als beauftragter Söldner infiltrierst du gefährliche Anomaliezonen mit veränderten Naturgesetzen und feindlichen Syndikaten, um kostbare Quantenmaterie zu bergen.",
+        "Überlebe gnadenlose PvPvE-Gefechte, beherrsche tödliche ballistische Feuerwaffen, sichere Spitzentechnologie und erreiche die Extraktion, bevor Raum-Zeit-Risse den Sektor verschlingen. Unser Wiki bietet aktuelle Waffendaten, Zonenkarten, Ausrüstungs-Baupläne und Raid-Walkthroughs."
+      ],
+      "stats": [
+        {
+          "label": "Entwickler",
+          "value": "Matter Team"
+        },
+        {
+          "label": "Publisher",
+          "value": "Gaijin Network"
+        },
+        {
+          "label": "Plattform",
+          "value": "PC (Steam)"
+        },
+        {
+          "label": "Genre",
+          "value": "Extraction Shooter"
+        },
+        {
+          "label": "Engine",
+          "value": "Unreal Engine 5"
+        },
+        {
+          "label": "Kampfstil",
+          "value": "Taktisches PvPvE"
+        }
+      ],
+      "cta": "Alle Guides entdecken"
+    },
+    "explore": {
+      "title": "activematter.blog Guides & Datenbank erkunden",
+      "description": "Meistere Active Matter mit taktischen Raid-Guides, detaillierten Waffenanalysen, Anomaliekarten, Ausrüstung und Überlebenstipps.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "activematter.blog Beginner Guide",
+          "description": "Dieses Modul führt neue Spieler in den Gameplay-Kreislauf ein: Extraktions-Raids, PvPvE-Kämpfe, Beutesammlung und grundlegenden Fortschritt auf activematter.blog.",
+          "href": "/guide/active-matter-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Basis-Loadout und medizinische Vorräte vor dem Einsatz in der Quantenzone zusammenstellen"
+            },
+            {
+              "label": "2",
+              "detail": "Infiltrationszonen betreten und gefährliche Raum-Zeit-Anomalien geschickt umgehen"
+            },
+            {
+              "label": "3",
+              "detail": "Wertvolle aktive Materiepartikel, Militärkisten und seltene Waffen bergen"
+            },
+            {
+              "label": "4",
+              "detail": "Extraktionspunkte ansteuern und gegen rivalisierende Söldner bis zur Rettung verteidigen"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "activematter.blog Weapons Guide",
+          "description": "Detaillierte Übersicht über verfügbare Feuerwaffen, Waffenklassen, Aufsätze und taktische Empfehlungen für erfolgreiche Raids.",
+          "href": "/weapons/active-matter-weapons-list",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Gewehre",
+              "detail": "Vielseitige Sturmgewehre für Gefechte auf mittlere bis weite Entfernungen"
+            },
+            {
+              "label": "MP",
+              "detail": "Kompakte Maschinenpistolen mit hoher Feuerrate für enge Nahkämpfe"
+            },
+            {
+              "label": "Sniper",
+              "detail": "Präzisionsgewehre mit verheerender Panzerungsdurchdringung auf Distanz"
+            },
+            {
+              "label": "Schrotflinten",
+              "detail": "Enorme Feuerkraft im Nahbereich zur Sicherung enger Gebäudeflure"
+            },
+            {
+              "label": "Pistolen",
+              "detail": "Zuverlässige Seitenwaffen mit extrem schneller Ziehgeschwindigkeit im Notfall"
+            },
+            {
+              "label": "Mods",
+              "detail": "Taktische Optiken, Schalldämpfer und erweiterte Magazine für Raids"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "activematter.blog Maps Guide",
+          "description": "Raid-Schauplätze, Kartenmerkmale, Erkundungspunkte und essenzielle Überlebenshinweise für erfolgreiche Einsätze.",
+          "href": "/mechanics/active-matter-anomaly-zones",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Außenposten",
+              "detail": "Verlassener Militärforschungskomplex mit reicher Beute und umkämpften Extraktionen"
+            },
+            {
+              "label": "Anomalien",
+              "detail": "Gravitationsverzerrungsfelder mit konzentrierten Kernen aktiver Materie"
+            },
+            {
+              "label": "Bunker",
+              "detail": "Unterirdische Tresorräume mit seltenen Technologieprototypen und Syndikatwachen"
+            },
+            {
+              "label": "Extraktion",
+              "detail": "Rotierende Quantenfeuer-Pads, die Signalaktivierung und Verteidigung verlangen"
+            },
+            {
+              "label": "Perimeter",
+              "detail": "Gefährliche Grenzkontrollpunkte mit Scharfschützen-Überhöhungen und Fahrzeugwracks"
+            },
+            {
+              "label": "Ruinen",
+              "detail": "Eingestürzte Stadtviertel mit vertikalen Flankierrouten und versteckten Hinterhalten"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "activematter.blog Gear Guide",
+          "description": "Leitfaden zu Ausrüstung, Panzerung, Rucksäcken und medizinischen Vorräten in Active Matter für optimale Überlebenschancen.",
+          "href": "/guide/active-matter-loot-guide",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Schwere Verbundpanzerung · Taktischer Rucksack — Höchster Schutz und maximale Kapazität"
+            },
+            {
+              "label": "A",
+              "detail": "Verstärkte Ballistikweste · Fortschrittliches Medkit — Solide Abwehr und schnelle Heilung"
+            },
+            {
+              "label": "B",
+              "detail": "Standard-Kampfweste · Feldbinden — Solide Ausrüstung mit gutem Preis-Leistungs-Verhältnis"
+            },
+            {
+              "label": "C",
+              "detail": "Plünderer-Gurtzeug · Einfache Schienen — Leichte Einsteigerausrüstung mit Minimaleffizienz"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "activematter.blog Loadout Guide",
+          "description": "Erstelle effektive Raid-Setups durch die Kombination von Waffen, Schutzwesten, Munition und taktischen Hilfsmitteln.",
+          "href": "/weapons/active-matter-best-weapons",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Sturm",
+              "detail": "Ausgewogenes Sturmgewehr-Setup für Angriffsspitzen und Squad-Gefechte"
+            },
+            {
+              "label": "Aufklärung",
+              "detail": "Gedämpfter Präzisions-Build für Aufklärung, Informationsgewinnung und Distanzabschüsse"
+            },
+            {
+              "label": "Infiltrator",
+              "detail": "Mobiler CQB-Build für schnelle Beutezüge und aggressive Flankenangriffe"
+            },
+            {
+              "label": "Support",
+              "detail": "Anhaltendes Sperrfeuer mit zusätzlichen medizinischen Vorräten und schwerer Panzerung"
+            },
+            {
+              "label": "Budget",
+              "detail": "Kostengünstige Basisausrüstung für risikoarme Erkundungs- und Beutegänge"
+            },
+            {
+              "label": "Taktik",
+              "detail": "EMP-Granaten, Wärmebildoptiken und Aufklärungsgeräte für abgestimmte Teams"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "activematter.blog Editions Guide",
+          "description": "Vergleich der Editionen und der enthaltenen Boni, Waffen, Ressourcen und Exklusiv-Items für die richtige Kaufentscheidung.",
+          "href": "/release/active-matter-early-access",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Standard",
+              "detail": "Vollständiger Spielzugang, Standard-Lagerstash und Rekruten-Ausrüstungspaket"
+            },
+            {
+              "label": "Deluxe",
+              "detail": "Erweiterter Lagerbehälter, zusätzliche Start-Credits und einzigartige Operatoren-Skins"
+            },
+            {
+              "label": "Quantum",
+              "detail": "Maximale Lagerkapazität, Premium-Waffenskins und Zugang zu Season-Pass-Boni"
+            },
+            {
+              "label": "PreOrder",
+              "detail": "Garantierter Zugang zur Closed Beta, exklusives Kampfemblem und Raid-Booster"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "activematter.blog Updates",
+          "description": "Patchnotes, Balance-Anpassungen, Entwickler-Ankündigungen und neue Inhalte zur Verfolgung des Spielstands.",
+          "href": "/release/active-matter-closed-beta",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "Patch 0.4.1",
+              "detail": "Balance-Anpassungen für Quantenwaffen und Hotfixes für Serverstabilität",
+              "badge": "Aktuell"
+            },
+            {
+              "label": "Beta-Test",
+              "detail": "Globale geschlossene Spieltestphase für neue Vertragssöldner",
+              "badge": "Aktiv"
+            },
+            {
+              "label": "Roadmap",
+              "detail": "Unreal Engine 5 Physik-Optimierungen und künftige Zonen-Erweiterungen",
+              "badge": "Geplant"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "activematter.blog System Requirements",
+          "description": "Hardware-Voraussetzungen, unterstützte Plattformen und Performance-Tipps für flüssiges Spielen am PC.",
+          "href": "/system/active-matter-system-requirements",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "OS",
+              "detail": "Windows 10 / Windows 11 (modernes 64-Bit-Betriebssystem erforderlich)"
+            },
+            {
+              "label": "CPU",
+              "detail": "Intel Core i5-8400 / AMD Ryzen 5 2600 (Empfohlen: i7-10700 / Ryzen 7 3700X)"
+            },
+            {
+              "label": "RAM",
+              "detail": "Mindestens 16 GB RAM für stabile Unreal Engine 5 Performance"
+            },
+            {
+              "label": "GPU",
+              "detail": "NVIDIA GeForce GTX 1060 (6GB) Minimum; RTX 3060 / RX 6700 XT empfohlen"
+            },
+            {
+              "label": "DirectX",
+              "detail": "Version 12 mit DirectX Raytracing (DXR) Unterstützung empfohlen"
+            },
+            {
+              "label": "Speicher",
+              "detail": "70 GB freier Speicherplatz auf einer schnellen Solid State Drive (SSD dringend empfohlen)"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "description": "Schnelle Antworten zu den wichtigsten Fragen rund um activematter.blog und das Gameplay von Active Matter.",
+      "items": [
+        {
+          "question": "Was ist die activematter.blog Wiki?",
+          "answer": "activematter.blog ist eine unabhängige Community-Wiki zu Active Matter, dem taktischen Sci-Fi-Extraction-Shooter auf Unreal Engine 5. Wir liefern Waffenwerte, Raid-Guides und Anomalie-Mechaniken."
+        },
+        {
+          "question": "Welche Kern-Gameplay-Bereiche deckt activematter.blog für Active Matter ab?",
+          "answer": "activematter.blog behandelt taktische PvPvE-Kämpfe, den Extraktions-Gameplay-Loop, Syndikatsfraktionen, Waffenmodifikationen und Überlebensstrategien in Anomaliezonen."
+        },
+        {
+          "question": "Wie können Einsteiger ihre Überlebensrate mit activematter.blog Guides steigern?",
+          "answer": "Neue Spieler können den Anfänger-Guides auf activematter.blog folgen, um sichere Zonen-Navigation, Materiesammlung und taktische Extraktionssicherung zu erlernen."
+        },
+        {
+          "question": "Werden Waffendaten und Ausrüstungs-Rankings auf activematter.blog regelmäßig aktualisiert?",
+          "answer": "Ja, activematter.blog aktualisiert ballistische Werte, Aufsatz-Tiers und Panzerungswerte zeitnah nach offiziellen Playtest-Patches."
+        },
+        {
+          "question": "Wo finden Spieler Systemanforderungen und Release-Details auf activematter.blog?",
+          "answer": "Besuche die System- und Release-Rubriken auf activematter.blog für Hardware-Benchmarks, Beta-Test-Zeitpläne und Starttermine."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Bereit, Active Matter zu meistern?",
+      "description": "Von der ersten erfolgreichen Extraktion bis zu intensiven Feuergefechten – unsere Community-Wiki versorgt dich mit kostenlosen, aktuellen Guides.",
+      "primary": "Einsteiger-Guide lesen",
+      "secondary": "Auf Steam spielen"
+    }
+  },
+  "bosses": {},
+  "shared": {
+    "wikiNavigation": "Wiki-Navigation",
+    "activeCodes": "Aktuelle Codes",
+    "updated": "Aktualisiert",
+    "viewAllCodes": "Alle Codes anzeigen",
+    "playOnRoblox": "Auf Roblox spielen",
+    "inThisSection": "In diesem Bereich",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "nextSteps": "Nächste Schritte",
+    "needHelp": "Brauchst du Hilfe?",
+    "relatedReading": "Verwandte Artikel",
+    "relatedGuides": "Verwandte Guides",
+    "readMore": "Mehr erfahren",
+    "officialMedia": "Offizielle Medien",
+    "home": "Startseite",
+    "noGuidesAvailable": "Noch keine Guides verfügbar. Schau bald wieder vorbei!"
+  },
+  "footer": {
+    "aboutTitle": "Active Matter Wiki",
+    "about": "Active Matter Wiki ist ein unabhängiger Fan-Hub für Extraktionstaktiken, Waffen, Gefechtsstrategien und essenzielles Spielwissen für Einsteiger und Veteranen.",
+    "quickLinks": "Schnelllinks",
+    "guides": "Guides",
+    "legal": "Rechtliches",
+    "copyright": "2026 Active Matter Wiki. Nicht verbunden mit Team Matter oder Gaijin Network.",
+    "description": "Futuristischer Sci-Fi-Extraction-Shooter auf Steam. Fortschrittliche Waffen, taktische Gefechte und intensive Raids.",
+    "playGame": "Active Matter auf Steam spielen",
+    "officialDiscord": "Offizieller Discord",
+    "officialYoutube": "Offizieller YouTube-Kanal",
+    "vvBuilder": "Loadout-Planer",
+    "beginnerGuide": "Einsteiger-Guide",
+    "raceGuides": "Operatoren-Guides",
+    "bossGuides": "Missions-Guides",
+    "buildGuide": "Waffen-Builds",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen"
+  },
+  "guide": {
+    "overviewTitle": "Active Matter Einsteiger- & Strategie-Guides",
+    "overviewDescription": "Umfassende Walkthroughs, Anfänger-Tutorials, Überlebenstaktiken und Extraktionstipps für Active Matter Söldner in der Quantenanomalie."
+  },
+  "weapons": {
+    "overviewTitle": "Active Matter Waffen & Loadout-Waffenkammer",
+    "overviewDescription": "Detaillierte Übersicht über Schusswaffen, Tier-Listen, Waffenaufsätze und Waffenmodifikationen in Active Matter."
+  },
+  "classes": {
+    "overviewTitle": "Active Matter Operatoren-Klassen & Syndikate",
+    "overviewDescription": "Entdecke Syndikatsfraktionen, Kampfrollen, einzigartige taktische Fertigkeiten und Team-Synergien in Active Matter."
+  },
+  "mechanics": {
+    "overviewTitle": "Active Matter Kernmechaniken & Anomalien",
+    "overviewDescription": "Meistere Quantenmechaniken, Gravitationsverschiebungen, Sicherheitszonen, Zeitschleifen und veränderte Physik in Active Matter."
+  },
+  "system": {
+    "overviewTitle": "Active Matter Systemanforderungen & PC-Einstellungen",
+    "overviewDescription": "Offizielle Mindest- und empfohlene PC-Spezifikationen, Unreal Engine 5 Performance-Optimierungen und Steam-Installationshilfen."
+  },
+  "release": {
+    "overviewTitle": "Active Matter Release-Termine & Testzeitpläne",
+    "overviewDescription": "Verfolge Active Matter Release-Daten, Closed-Beta-Zugänge, Playtest-Registrierungen und Early-Access-Zeitpläne."
+  }
+}
