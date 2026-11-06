@@ -9,6 +9,10 @@
     {
       "pattern": "activematter.blog",
       "custom_domain": true
+    },
+    {
+      "pattern": "www.activematter.blog",
+      "custom_domain": true
     }
   ]
 }

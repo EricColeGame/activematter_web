@@ -9,8 +9,10 @@ export function NativeBannerAd({ className = "" }: { className?: string }) {
   // host is per-site (pl<website-id>.<cdn-domain>) and MUST come from
   // NEXT_PUBLIC_ADSTERRA_NATIVE_HOST — never hardcode a real site's host here.
   const host = process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_HOST;
-  if (!key || key === "0" || !host) return null;
-  const html = `<script async="async" data-cfasync="false" src="https://${host}/${key}/invoke.js"></script>`;
+  const source = process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_URL;
+  if (!key || key === "0" || !host || !source) return null;
+  if (!source.startsWith(`https://${host}/`) || !source.includes(key)) return null;
+  const html = `<script async="async" data-cfasync="false" src="${source}"></script>`;
   return (
     <div className={`my-8 w-full ${className}`}>
       <div id={`container-${key}`} dangerouslySetInnerHTML={{ __html: html }} />
